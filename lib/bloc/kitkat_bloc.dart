@@ -38,8 +38,8 @@ class KitkatBloc extends Bloc<KitkatEvent, KitkatState> {
   }
 
   @override
-  void addError(Object error, [StackTrace stackTrace]) {
+  void onError(Object error, [StackTrace stackTrace]) {
     print(error.toString());
-    super.addError(error, stackTrace);
+    super.onError(error, stackTrace);
   }
 }
